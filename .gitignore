@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Allow src and public folders
+!src/
+!src/**
+
+!public/
+!public/**
+
+# Allow gitignore itself
+!.gitignore

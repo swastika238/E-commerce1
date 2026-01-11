@@ -23,6 +23,8 @@ const Login = () => {
         <imput type=" password"placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
             <button type="submit">Login</button>
       </form>
+      {error && <p>{error}</p>}
+      {success && <p>{success}</p>}
     </div>
   )
 }

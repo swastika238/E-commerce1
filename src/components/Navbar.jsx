@@ -4,9 +4,8 @@ import { MapPin } from 'lucide-react';
 import { IoCartOutline } from 'react-icons/io5';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
-const Navbar = () => {
-  const [location, setLocation] = useState(null); // Example: { county: "Kathmandu", state: "Bagmati" }
-  const [cartCount, setCartCount] = useState(0); // Example: number of items in cart
+const Navbar = ({location}) => {
+  const [cartCount, setCartCount] = useState(0); 
 
   return (
     <div className="bg-white py-3 shadow-2xl px-4 md:px-0">
